@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Complete el siguiente formulario para registrarse, una vez terminado presione el boton registro "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView48"
+                android:padding="16dp"
+                android:text="Ingrese su usuario"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/pusername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/textView49"
+                android:layout_alignParentEnd="@+id/textView49"
+                android:layout_alignParentRight="@+id/textView49"
+                android:layout_below="@id/textView48"
+                android:layout_toRightOf="@id/textView49"
+                android:hint="Usuario"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView49"
+                android:padding="16dp"
+                android:text="Ingrese su clave"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/ppassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="@id/textView50"
+                android:layout_alignParentRight="@+id/textView50"
+                android:layout_below="@id/textView49"
+                android:layout_toRightOf="@id/textView50"
+                android:hint="Clave"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView50"
+                android:padding="14dp"
+                android:text="Presenta alguna enfermedad infecciosa o parasitaria?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView51"
+                android:layout_toEndOf="@+id/button11"
+                android:layout_toRightOf="@+id/button11"
+                android:hint="ENFERMEDADES INFECCIOSAS  Y PARASITARIAS" />
+
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView51"
+                android:onClick="click20"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button11"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView51"
+                android:layout_toEndOf="@+id/button10"
+                android:layout_toRightOf="@+id/button10"
+                android:onClick="click1"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button10"
+                android:padding="14dp"
+                android:text="Presenta Neoplastia?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView52"
+                android:layout_toEndOf="@+id/button13"
+                android:layout_toRightOf="@+id/button13"
+                android:hint="NEOPLASIAS" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView52"
+                android:onClick="click21"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button13"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView52"
+                android:layout_toEndOf="@+id/button12"
+                android:layout_toRightOf="@+id/button12"
+                android:onClick="click2"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button12"
+                android:padding="14dp"
+                android:text="Presenta enfermedades en la sangre u organismos hematopoyeticos?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView53"
+                android:layout_toEndOf="@+id/button15"
+                android:layout_toRightOf="@+id/button15"
+                android:hint="ENF. SANGRE Y ORG. HEMATOPOYETICOS" />
+
+            <Button
+                android:id="@+id/button14"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView53"
+                android:onClick="click22"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button15"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView53"
+                android:layout_toEndOf="@+id/button14"
+                android:layout_toRightOf="@+id/button14"
+                android:onClick="click3"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button14"
+                android:padding="14dp"
+                android:text="Presenta enfermedades endocrinas, nutricionales o metabolicas?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView54"
+                android:layout_toEndOf="@+id/button17"
+                android:layout_toRightOf="@+id/button17"
+                android:hint="ENF. ENDOCRINAS, NUTRIC. Y METABOLICAS" />
+
+            <Button
+                android:id="@+id/button16"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView54"
+                android:onClick="click23"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button17"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView54"
+                android:layout_toEndOf="@+id/button16"
+                android:layout_toRightOf="@+id/button16"
+                android:onClick="click4"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button16"
+                android:padding="14dp"
+                android:text="Presenta enfermedades mentales?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView55"
+                android:layout_toEndOf="@+id/button19"
+                android:layout_toRightOf="@+id/button19"
+                android:hint="TRAST. MENTALES Y DEL COMPORTAMIENTO" />
+
+            <Button
+                android:id="@+id/button18"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView55"
+                android:onClick="click24"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button19"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView55"
+                android:layout_toEndOf="@+id/button18"
+                android:layout_toRightOf="@+id/button18"
+                android:onClick="click5"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button18"
+                android:padding="14dp"
+                android:text="Presenta enfermedades en el sistema nervioso?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView56"
+                android:layout_toEndOf="@+id/button21"
+                android:layout_toRightOf="@+id/button21"
+                android:hint="ENF. DEL SISTENA NERVIOSO" />
+
+            <Button
+                android:id="@+id/button20"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView56"
+                android:onClick="click25"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button21"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView56"
+                android:layout_toEndOf="@+id/button20"
+                android:layout_toRightOf="@+id/button20"
+                android:onClick="click6"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button20"
+                android:padding="14dp"
+                android:text="Presenta enfermedades en los ojos?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/g"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView57"
+                android:layout_toEndOf="@+id/button23"
+                android:layout_toRightOf="@+id/button23"
+                android:hint="ENF. DEL OJO Y SUS ANEXOS" />
+
+            <Button
+                android:id="@+id/button22"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView57"
+                android:onClick="click26"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button23"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView57"
+                android:layout_toEndOf="@+id/button22"
+                android:layout_toRightOf="@+id/button22"
+                android:onClick="click7"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button22"
+                android:padding="14dp"
+                android:text="Presenta enfermedades en los oidos?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/h"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView58"
+                android:layout_toEndOf="@+id/button25"
+                android:layout_toRightOf="@+id/button25"
+                android:hint="ENF. DEL OIDO Y APOF. MASTOIDES" />
+
+            <Button
+                android:id="@+id/button24"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView58"
+                android:onClick="click27"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button25"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView58"
+                android:layout_toEndOf="@+id/button24"
+                android:layout_toRightOf="@+id/button24"
+                android:onClick="click8"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button24"
+                android:padding="14dp"
+                android:text="Presenta enfermedades en el sistema circulatorio?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/i"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView59"
+                android:layout_toEndOf="@+id/button27"
+                android:layout_toRightOf="@+id/button27"
+                android:hint="ENF. DEL SISTEMA CIRCULATORIO" />
+
+            <Button
+                android:id="@+id/button26"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView59"
+                android:onClick="click28"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button27"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView59"
+                android:layout_toEndOf="@+id/button26"
+                android:layout_toRightOf="@+id/button26"
+                android:onClick="click9"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button26"
+                android:padding="14dp"
+                android:text="Presenta enfermedades en el sistema respiratorio?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/j"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView60"
+                android:layout_toEndOf="@+id/button29"
+                android:layout_toRightOf="@+id/button29"
+                android:hint="ENF. DEL SISTEMA RESPIRATORIO" />
+
+            <Button
+                android:id="@+id/button28"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView60"
+                android:onClick="click29"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button29"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView60"
+                android:layout_toEndOf="@+id/button28"
+                android:layout_toRightOf="@+id/button28"
+                android:onClick="click10"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button28"
+                android:padding="14dp"
+                android:text="Presenta enfermedades en el sistema digestivo?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/k"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView61"
+                android:layout_toEndOf="@+id/button31"
+                android:layout_toRightOf="@+id/button31"
+                android:hint="ENF. DEL SISTEMA DIGESTIVO" />
+
+            <Button
+                android:id="@+id/button30"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView61"
+                android:onClick="click30"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button31"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView61"
+                android:layout_toEndOf="@+id/button30"
+                android:layout_toRightOf="@+id/button30"
+                android:onClick="click11"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button30"
+                android:padding="14dp"
+                android:text="Presenta enfermedades en la piel?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/l"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView62"
+                android:layout_toEndOf="@+id/button33"
+                android:layout_toRightOf="@+id/button33"
+                android:hint="ENF. DE LA PIEL Y TEJ. SUBCUTANEO" />
+
+            <Button
+                android:id="@+id/button32"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView62"
+                android:onClick="click31"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button33"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView62"
+                android:layout_toEndOf="@+id/button32"
+                android:layout_toRightOf="@+id/button32"
+                android:onClick="click12"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button32"
+                android:padding="14dp"
+                android:text="Presenta enfermedades osteomusculares o en tejidos conectivos?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/m"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView63"
+                android:layout_toEndOf="@+id/button35"
+                android:layout_toRightOf="@+id/button35"
+                android:hint="ENF.SIST. OSTEOMUSC.Y TEJ.CONECTIVO" />
+
+            <Button
+                android:id="@+id/button34"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView63"
+                android:onClick="click32"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button35"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView63"
+                android:layout_toEndOf="@+id/button34"
+                android:layout_toRightOf="@+id/button34"
+                android:onClick="click13"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button34"
+                android:padding="14dp"
+                android:text="Presenta enfermedades genitourinarias?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/n"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView64"
+                android:layout_toEndOf="@+id/button37"
+                android:layout_toRightOf="@+id/button37"
+                android:hint="ENF. DEL SIST. GENITOURINARIO" />
+
+            <Button
+                android:id="@+id/button36"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView64"
+                android:onClick="click33"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button37"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView64"
+                android:layout_toEndOf="@+id/button36"
+                android:layout_toRightOf="@+id/button36"
+                android:onClick="click14"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button36"
+                android:padding="14dp"
+                android:text="Presenta algun sintoma o hallazgo anormal?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/o"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView65"
+                android:layout_toEndOf="@+id/button39"
+                android:layout_toRightOf="@+id/button39"
+                android:hint="SINT. SIGNOS Y HALLAZGOS ANORMALES" />
+
+            <Button
+                android:id="@+id/button38"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView65"
+                android:onClick="click34"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button39"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView65"
+                android:layout_toEndOf="@+id/button38"
+                android:layout_toRightOf="@+id/button38"
+                android:onClick="click15"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button38"
+                android:padding="14dp"
+                android:text="Presenta algun traumatismo o envenenamiento?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView66"
+                android:layout_toEndOf="@+id/button41"
+                android:layout_toRightOf="@+id/button41"
+                android:hint="TRAUMATISMOS Y ENVENENAMIENTOS" />
+
+            <Button
+                android:id="@+id/button40"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView66"
+                android:onClick="click35"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button41"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView66"
+                android:layout_toEndOf="@+id/button40"
+                android:layout_toRightOf="@+id/button40"
+                android:onClick="click16"
+                android:text="SI" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button40"
+                android:padding="14dp"
+                android:text="Presenta algun indicativo de violencia familiar?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/q"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView67"
+                android:layout_toEndOf="@+id/button43"
+                android:layout_toRightOf="@+id/button43"
+                android:hint="VIOLENCIA FAMILIAR" />
+
+            <Button
+                android:id="@+id/button42"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView67"
+                android:onClick="click36"
+                android:text="NO" />
+
+            <Button
+                android:id="@+id/button43"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView67"
+                android:layout_toEndOf="@+id/button42"
+                android:layout_toRightOf="@+id/button42"
+                android:onClick="click17"
+                android:text="SI" />
+
+
+            <Button
+                android:id="@+id/buttonreg"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button42"
+                android:hint="Finalizar registro"
+                android:onClick="onreg"
+                android:padding="14dp" />
+
+            <Button
+                android:id="@+id/button47"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/buttonreg"
+                android:onClick="onfinish3"
+                android:text="Cerrar" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
