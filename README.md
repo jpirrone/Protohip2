@@ -1,4 +1,4 @@
-# Protohip2
+# Protohip
 Protocolo hipocrático Jose Pirrone
 Estos archivos son la versión que funciona de la primera implementación de una aplicación ANDROID 
 de intercambio de datos basada en un protocolo hipocrático.
